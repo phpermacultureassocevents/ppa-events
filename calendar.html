@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhPermaculture 2027 Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="./css/output.css" rel="stylesheet">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">PHILIPPINE PERMACULTURE ASSOCIATION 2027 CALENDAR</p>
+        <p class="intro">Check our upcoming events and select one to see the details!</p>
+      </div>
+    </header>
+
+    <section class="calendar-panel" aria-label="Events calendar">
+      <div class="calendar-toolbar">
+        <button id="prev-month" class="nav-button" type="button" aria-label="Previous month">‹</button>
+        <h2 id="month-label" aria-live="polite">Month Year</h2>
+        <button id="next-month" class="nav-button" type="button" aria-label="Next month">›</button>
+        <button id="today-button" class="today-button" type="button">Today</button>
+      </div>
+      <div class="weekdays" aria-hidden="true">
+        <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+      </div>
+      <div id="calendar-grid" class="calendar-grid" aria-label="Calendar dates"></div>
+    </section>
+
+  <div id="event-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 p-4">
+    <!-- Modal box -->
+    <section id="event-details" class="relative max-h-[85vh] w-full max-w-xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl sm:p-8" role="dialog" aria-modal="true" aria-labelledby="details-title" aria-describedby="details-description">
+      <button id="close-modal" type="button" aria-label="Close event details" class="absolute right-4 top-3 rounded-lg px-2 text-3xl leading-none text-slate-400 hover:bg-slate-100 hover:text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500">&times;</button>
+
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600"></p>
+      <h2 id="details-title" class="mt-2 pr-8 text-2xl font-bold text-green-950"></h2>
+      <p id="details-date" class="mt-2 text-sm text-slate-500"></p>
+      <p id="details-description" class="mt-5 whitespace-pre-line leading-relaxed text-slate-700"></p>
+      <div class="mt-5 space-y-2 border-t border-slate-200 pt-4 text-sm text-slate-600">
+        <p id="details-location"></p>
+        <p id="details-time"></p>
+        <p class="wrap-break-word">
+          <strong class="text-slate-800">Registration Link:</strong>
+          <a id="details-url" href="#" target="_blank" rel="noopener noreferrer" class="ml-1 font-medium text-blue-600 underline underline-offset-2 hover:text-blue-800"></a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

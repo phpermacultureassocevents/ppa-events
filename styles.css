@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+:root {
+  color-scheme: light;
+  --ink: #202720;
+  --muted: #69736b;
+  --line: #e5e9e4;
+  --paper: #ffffff;
+  --page: #eff7eb;
+  --accent: #39745a;
+  --accent-soft: #e7f2eb;
+}
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 16px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.page { width: min(960px, calc(100% - 32px)); margin: 48px auto; }
+.page-header { margin-bottom: 26px; }
+.eyebrow, .details-kicker { margin: 0 0 8px; color: var(--accent); font-size: .75rem; font-weight: 750; letter-spacing: .12em; }
+h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; letter-spacing: -.04em; }
+.intro { margin: 12px 0 0; color: var(--muted); }
+.calendar-panel, .details-panel {
+  background: var(--paper); border: 1px solid var(--line); border-radius: 18px;
+  box-shadow: 0 8px 28px rgb(28 48 34 / 4%);
+}
+.calendar-panel { padding: 22px; }
+.calendar-toolbar { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; }
+.calendar-toolbar h2 { flex: 1; text-align: center; margin: 0; font-size: 1.25rem; }
+button { font: inherit; cursor: pointer; }
+.nav-button, .today-button {
+  border: 1px solid var(--line); background: white; border-radius: 10px; min-height: 40px;
+}
+.nav-button { width: 42px; font-size: 1.7rem; line-height: 1; color: var(--ink); }
+.today-button { padding: 0 13px; font-size: .9rem; }
+.nav-button:hover, .today-button:hover { background: var(--accent-soft); border-color: #c6ddcd; }
+.weekdays, .calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.weekdays { margin-bottom: 8px; color: var(--muted); font-size: .78rem; font-weight: 700; text-align: center; }
+.weekdays span { padding: 8px 0; }
+.calendar-grid { gap: 5px; }
+.day {
+  position: relative; display: flex; flex-direction: column; align-items: stretch; gap: 5px;
+  min-height: 100px; padding: 8px; border: 1px solid transparent; border-radius: 10px;
+  background: #fbfcfb; text-align: left; color: var(--ink); min-width: 0;
+}
+.day:hover { border-color: #c6ddcd; background: #f5faf6; }
+.day.outside { color: #a8afa9; background: #f7f8f7; }
+.day-number { font-size: .88rem; font-weight: 650; align-self: flex-start; }
+.day.today .day-number {
+  display: grid; place-items: center; width: 26px; height: 26px; margin: -4px 0 -2px -4px;
+  border-radius: 50%; background: var(--accent); color: white;
+}
+.event-chip {
+  display: block; overflow: hidden; padding: 3px 5px; border-radius: 5px;
+  background: var(--accent-soft); color: #28583f; font-size: .72rem; line-height: 1.3;
+  white-space: nowrap; text-overflow: ellipsis;
+}
+.event-chip.more { background: transparent; color: var(--muted); }
+.legend { display: flex; align-items: center; gap: 8px; margin: 16px 0 0; color: var(--muted); font-size: .82rem; }
+.legend-dot { width: 9px; height: 9px; border-radius: 3px; background: var(--accent); }
+.details-panel { margin-top: 18px; padding: 24px; min-height: 170px; }
+.details-panel h2 { margin: 0 0 5px; font-size: 1.45rem; }
+.details-date { margin: 0 0 14px; color: var(--accent); font-weight: 650; }
+.details-description { margin: 0 0 12px; white-space: pre-line; }
+.details-meta { margin: 5px 0 0; color: var(--muted); }
+footer { padding: 22px 4px; color: var(--muted); font-size: .82rem; }
+code { background: #e9ede9; padding: 2px 5px; border-radius: 4px; }
+.empty-day { pointer-events: none; background: transparent; }
+@media (max-width: 620px) {
+  .page { width: min(100% - 18px, 960px); margin: 24px auto; }
+  .calendar-panel { padding: 12px; border-radius: 14px; }
+  .calendar-grid { gap: 3px; }
+  .day { min-height: 76px; padding: 5px 4px; border-radius: 7px; }
+  .day-number { font-size: .78rem; }
+  .event-chip { font-size: .64rem; padding: 3px; }
+  .weekdays { font-size: .7rem; }
+  .calendar-toolbar { gap: 6px; }
+  .calendar-toolbar h2 { font-size: 1.05rem; }
+  .nav-button { width: 36px; min-height: 36px; }
+  .today-button { padding: 0 9px; min-height: 36px; font-size: .82rem; }
+}
