@@ -6,6 +6,7 @@ const detailsDescription = document.querySelector("#details-description");
 const detailsLocation = document.querySelector("#details-location");
 const detailsTime = document.querySelector("#details-time");
 const detailsUrl = document.querySelector('#details-url')
+const detailsRegistration = document.querySelector('#details-registration')
 
 const events = [
   {
@@ -15,8 +16,8 @@ const events = [
     startDate: "2027-01-10",
     endDate: "2027-01-10",
     color: "#0D9488",
-    time: "9 AM - 2 PM",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "Energy and Wellness Workshop",
@@ -29,6 +30,16 @@ const events = [
     url: ""
   },
   {
+    title: "PermaKapihan - Food",
+    description: "Join us for a hearty discussion about food, and how Permaculture assures us we get a lot of it. Free coffee, bring some snacks to share, pay what you can!",
+    location: "Ecohouse (17 Hereford St, Concepcion Dos, Marikina)",
+    startDate: "2027-02-07",
+    endDate: "2027-02-07",
+    color: "#0D9488",
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+  },
+  {
     title: "Basic Permaculture Design Course",
     description: "Learn Permaculture ethics and principles, experience designing with nature using your hand and mind, and slowly build your own project masterplan with us!",
     location: "PRI-Ecodee (Ecodee - Permaculture Research Institute, Cabiao, Nueva Ecija)",
@@ -36,7 +47,7 @@ const events = [
     endDate: "2027-02-25",
     color: "#2563EB",
     time: "",
-    url: ""
+    url: "https://forms.gle/86LMhyDRM11FKUwZ7"
   },
   {
     title: "Food and Cooking Workshop",
@@ -65,12 +76,12 @@ const events = [
     startDate: "2027-03-14",
     endDate: "2027-03-14",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "Trees during El Niño Seminar",
-    description: "Join us together with PNTE (Philippine Native Tree Enthusiasts) as we discuss the role of trees as our country faces El Niño.",
+    description: "Join us as we discuss the role of trees as our country faces El Niño.",
     location: "PRI-Ecodee (Ecodee - Permaculture Research Institute, Cabiao, Nueva Ecija)",
     startDate: "2027-03-19",
     endDate: "2027-03-21",
@@ -85,8 +96,8 @@ const events = [
     startDate: "2027-04-04",
     endDate: "2027-04-04",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "PermaCamp",
@@ -115,8 +126,8 @@ const events = [
     startDate: "2027-05-09",
     endDate: "2027-05-09",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "Social Permaculture Workshop",
@@ -145,8 +156,8 @@ const events = [
     startDate: "2027-06-06",
     endDate: "2027-06-06",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "Bamboo Building Workshop",
@@ -185,8 +196,8 @@ const events = [
     startDate: "2027-07-11",
     endDate: "2027-07-11",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "Water Management Workshop",
@@ -215,8 +226,8 @@ const events = [
     startDate: "2027-08-15",
     endDate: "2027-08-15",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "PermaCamp",
@@ -245,8 +256,8 @@ const events = [
     startDate: "2027-09-12",
     endDate: "2027-09-12",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "Basic Permaculture Design Course",
@@ -275,8 +286,8 @@ const events = [
     startDate: "2027-10-10",
     endDate: "2027-10-10",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "Animal Husbandry Workshop",
@@ -305,8 +316,8 @@ const events = [
     startDate: "2027-11-14",
     endDate: "2027-11-14",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "NATIONAL PERMACULTURE CONVERGENCE",
@@ -325,8 +336,8 @@ const events = [
     startDate: "2027-12-05",
     endDate: "2027-12-05",
     color: "#0D9488",
-    time: "",
-    url: ""
+    time: "10AM - 2PM",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
   },
   {
     title: "Guilds Workshop",
@@ -337,6 +348,37 @@ const events = [
     color: "#65A30D",
     time: "",
     url: ""
+  },
+  // Student stays
+  {
+    title: "PRI-Ecodee School Partnership",
+    description: "Selected students and faculty from Hong Kong will be staying to learn in PRI-Ecodee.",
+    location: "PRI-Ecodee (Ecodee - Permaculture Research Institute, Cabiao, Nueva Ecija)",
+    startDate: "2027-02-27",
+    endDate: "2027-03-06",
+    color: "#636363",
+    time: "",
+    url: ""
+  },
+  {
+    title: "Collaboration with Belgian Volunteers",
+    description: "During this period, volunteers from Belgium will be staying and helping at PRI-Ecodee while learning and practicing Permaculture.",
+    location: "PRI-Ecodee (Ecodee - Permaculture Research Institute, Cabiao, Nueva Ecija)",
+    startDate: "2027-06-30",
+    endDate: "2027-07-31",
+    color: "#636363",
+    time: "",
+    url: ""
+  },
+  {
+    title: "Collaboration with French Volunteers",
+    description: "During this period, volunteers from France under the Solaria group will be staying and helping at PRI-Ecodee while learning and practicing Permaculture.",
+    location: "PRI-Ecodee (Ecodee - Permaculture Research Institute, Cabiao, Nueva Ecija)",
+    startDate: "2027-07-10",
+    endDate: "2027-08-16",
+    color: "#434343",
+    time: "",
+    url: "asdasd"
   }
 ];
 
@@ -379,6 +421,11 @@ function showEvent(event) {
   detailsLocation.textContent = event.location ? `Location: ${event.location}` : "";
   detailsTime.textContent = event.category ? `Category: ${event.category}` : "";
 
+  if (event.url == "") {
+    detailsRegistration.textContent = ""
+  } else {
+    detailsRegistration.textContent = "Registration Link:"
+  }
   detailsUrl.href = event.url;
   detailsUrl.textContent = event.url;
   detailsUrl.style.display = "inline";
