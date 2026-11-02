@@ -17,7 +17,7 @@ const events = [
     endDate: "2027-04-25",
     color: "#624000",
     time: "",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
     {
     title: "Urban Permaculture Basic Design Course",
@@ -27,7 +27,7 @@ const events = [
     endDate: "2027-05-02",
     color: "#624000",
     time: "",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
     {
     title: "Urban Permaculture Basic Design Course",
@@ -37,7 +37,7 @@ const events = [
     endDate: "2027-05-23",
     color: "#624000",
     time: "",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "PermaKapihan - New Year's Resolution",
@@ -47,7 +47,7 @@ const events = [
     endDate: "2027-01-10",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "Energy and Wellness Workshop",
@@ -57,7 +57,7 @@ const events = [
     endDate: "2027-01-31",
     color: "#F59E0B",
     time: "",
-    url: ""
+    url: "https://forms.gle/GEbJgRoWvcgZzTbx8"
   },
   {
     title: "PermaKapihan - Food",
@@ -67,7 +67,7 @@ const events = [
     endDate: "2027-02-07",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "Basic Permaculture Design Course",
@@ -107,7 +107,7 @@ const events = [
     endDate: "2027-03-14",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "Trees during El Niño Seminar",
@@ -127,7 +127,7 @@ const events = [
     endDate: "2027-04-04",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "PermaCamp",
@@ -157,7 +157,7 @@ const events = [
     endDate: "2027-05-09",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "Social Permaculture Workshop",
@@ -187,7 +187,7 @@ const events = [
     endDate: "2027-06-06",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "Bamboo Building Workshop",
@@ -227,7 +227,7 @@ const events = [
     endDate: "2027-07-11",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "Water Management Workshop",
@@ -257,7 +257,7 @@ const events = [
     endDate: "2027-08-15",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "PermaCamp",
@@ -287,7 +287,7 @@ const events = [
     endDate: "2027-09-12",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "Basic Permaculture Design Course",
@@ -317,7 +317,7 @@ const events = [
     endDate: "2027-10-10",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "Animal Husbandry Workshop",
@@ -347,7 +347,7 @@ const events = [
     endDate: "2027-11-14",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "NATIONAL PERMACULTURE CONVERGENCE",
@@ -367,7 +367,7 @@ const events = [
     endDate: "2027-12-05",
     color: "#0D9488",
     time: "10AM - 2PM",
-    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+    url: "https://forms.gle/tXiHvYnv97aMU6Jz8"
   },
   {
     title: "Guilds Workshop",
