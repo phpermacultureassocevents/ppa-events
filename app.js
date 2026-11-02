@@ -10,6 +10,36 @@ const detailsRegistration = document.querySelector('#details-registration')
 
 const events = [
   {
+    title: "Urban Permaculture Basic Design Course",
+    description: "Join us for a 3-weekend (April 24-25, June 1-2, June 22-23) course about Permaculture designing in the urban setting.",
+    location: "Ecohouse (17 Hereford St, Concepcion Dos, Marikina)",
+    startDate: "2027-04-24",
+    endDate: "2027-04-25",
+    color: "#624000",
+    time: "",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+  },
+    {
+    title: "Urban Permaculture Basic Design Course",
+    description: "Join us for a 3-weekend (April 24-25, June 1-2, June 22-23) course about Permaculture designing in the urban setting.",
+    location: "Ecohouse (17 Hereford St, Concepcion Dos, Marikina)",
+    startDate: "2027-05-01",
+    endDate: "2027-05-02",
+    color: "#624000",
+    time: "",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+  },
+    {
+    title: "Urban Permaculture Basic Design Course",
+    description: "Join us for a 3-weekend (April 24-25, June 1-2, June 22-23) course about Permaculture designing in the urban setting.",
+    location: "Ecohouse (17 Hereford St, Concepcion Dos, Marikina)",
+    startDate: "2027-05-22",
+    endDate: "2027-05-23",
+    color: "#624000",
+    time: "",
+    url: "https://forms.gle/GWp1ZtPi55Y4PBjo7"
+  },
+  {
     title: "PermaKapihan - New Year's Resolution",
     description: "Another year, another kapihan! Let's talk about what our resolutions are this year. Free coffee, bring some snacks to share, pay what you can!",
     location: "Ecohouse (17 Hereford St, Concepcion Dos, Marikina)",
